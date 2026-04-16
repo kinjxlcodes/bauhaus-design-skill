@@ -1,4 +1,4 @@
-# bauhaus-design — Claude Skill
+# bauhaus-design - Claude Skill
 
 > "Form follows function. If an element has no job, it does not exist."
 
