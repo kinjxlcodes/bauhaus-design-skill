@@ -1,0 +1,9 @@
+{
+  "name": "bauhaus-design",
+  "description": "Bauhaus design system for Claude Code — 100 years of design thinking as executable CSS rules, layout tokens, and component patterns. Produces editorial web interfaces, heavy type grids, primary-color UI components, and geometric architectural compositions.",
+  "version": "2.0.0",
+  "author": "kinjxlcodes",
+  "homepage": "https://github.com/kinjxlcodes/bauhaus-design-skill",
+  "license": "MIT",
+  "keywords": ["design", "css", "bauhaus", "frontend", "ui", "editorial", "geometric", "modernist"]
+}

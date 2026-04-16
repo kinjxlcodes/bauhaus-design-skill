@@ -2,56 +2,67 @@
 
 > "Form follows function. If an element has no job, it does not exist."
 
-A Claude Code skill encoding 100 years of Bauhaus design thinking as CSS rules,
-layout tokens, and component patterns. Makes Claude design like it went to art school.
+A Claude Code plugin encoding 100 years of Bauhaus design thinking as CSS rules,
+layout tokens, and component patterns.
 
-## Install
+---
 
-```bash
-npx skills add dotdesxgn/bauhaus-design-skill
+## Install via Claude Code (recommended)
+
+Inside any Claude Code session:
+
+```
+/plugin marketplace add kinjxlcodes/bauhaus-design-skill
+/plugin install bauhaus-design@kinjxlcodes-bauhaus-design-skill
 ```
 
-Global install (works across all projects):
+## Install via npx
 
 ```bash
-npx skills add dotdesxgn/bauhaus-design-skill -g
+# Clear credential helper first if on Mac
+git config --global credential.helper ""
+
+npx skills add kinjxlcodes/bauhaus-design-skill -a claude-code -g
 ```
 
-Specific agents:
+## Manual install
 
 ```bash
-npx skills add dotdesxgn/bauhaus-design-skill -a claude-code -g
+mkdir -p ~/.claude/skills/bauhaus-design
+curl -o ~/.claude/skills/bauhaus-design/SKILL.md \
+  https://raw.githubusercontent.com/kinjxlcodes/bauhaus-design-skill/main/skills/bauhaus-design/SKILL.md
 ```
+
+---
 
 ## Use
 
-Type `/bauhaus` in any Claude Code session.
+Type `/bauhaus` in any Claude Code session, or use words like `geometric`,
+`editorial`, `modernist`, `form follows function` — it auto-triggers.
 
-Auto-triggers on: `geometric`, `editorial`, `modernist`, `bauhaus`,
-`Swiss style`, `form follows function`, `clean UI`, `grid-based`.
+---
 
-## What's inside
+## Structure
 
 ```
-skills/
-└── bauhaus-design/
-    ├── SKILL.md        619 lines of Bauhaus design rules for Claude
-    └── tokens.json     W3C design tokens — import directly into Figma
+bauhaus-design-skill/
+├── .claude-plugin/
+│   └── plugin.json        Plugin metadata
+├── skills/
+│   └── bauhaus-design/
+│       └── SKILL.md       619 lines of Bauhaus rules
+└── README.md
 ```
 
-**The skill gives Claude:**
-- Full CSS token system — 8 colors, 10 type sizes, 8px grid
+## What Claude gets
+
+- CSS token system — 8 colors, 10 type sizes, 8px grid
 - 5 era font pairings — Bauhaus / Industrial / Digital / 2026 / Editorial
 - 4 reference layout patterns from real design images
 - Component library — nav, stamps, pull quotes, tags, status badges
 - Animation rules — mechanical precision, zero bounce
-- Hard "never do this" list — kills AI slop before it happens
-
-## Works with
-
-Claude Code · Cursor · Windsurf · Gemini CLI · Codex · OpenCode
-— any tool that reads `SKILL.md` files.
+- Pre-build checklist + hard never-do list
 
 ## License
 
-MIT — use, fork, sell. Credit `@dotdesxgn` appreciated.
+MIT — use, fork, sell. Credit `@kinjxlcodes` appreciated.
