@@ -62,12 +62,6 @@ Black = skeleton. Paper = surface. Grid = law.
 
 ---
 
-## Sell this
-
-This skill can be packaged and sold on Gumroad or Lemon Squeezy.
-Suggested price: $9–$19 for the skill alone, $29–$49 bundled with
-a Figma template using the same token system.
-
 ## License
 
 MIT — use, fork, sell, remix. Credit @dotdesxgn appreciated.
